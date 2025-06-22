@@ -4,92 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Convite - Aniversário de 15 Anos</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Dancing Script -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fff5f7;
-      color: #333;
-      text-align: center;
-    }
-    header {
-      background-color: #ff99cc;
-      padding: 20px;
-      color: white;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .banner img {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-    .info {
-      background-color: #ffe6ee;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 20px 0;
-    }
-    .info h2 {
-      color: #ff6699;
-    }
-    .confirm-button {
-      display: inline-block;
-      padding: 15px 30px;
-      background-color: #ff6699;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1.2em;
-      margin: 20px 0;
-      transition: background-color 0.3s;
-    }
-    .confirm-button:hover {
-      background-color: #ff4d88;
-    }
-    footer {
-      background-color: #ff99cc;
-      color: white;
-      padding: 10px;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-    }
-    footer p {
-      margin: 5px 0;
+    .font-dancing {
+      font-family: 'Dancing Script', cursive;
     }
   </style>
 </head>
-<body>
-  <header>
-    <h1>Aniversário de 15 Anos da Isabele</h1>
+<body class="bg-pink-50 text-center text-gray-800">
+
+  <header class="bg-gradient-to-r from-pink-400 to-pink-500 text-white py-6 shadow-md">
+    <h1 class="text-5xl font-dancing tracking-wide drop-shadow-md">
+       Aniversário de 15 Anos da Isabele 
+    </h1>
   </header>
-  <div class="container">
-    <div class="banner">
-      <img src="image.jpg" alt="Imagem de festa">
+
+  <div class="container mx-auto max-w-3xl px-4 py-8">
+    <div class="banner mb-6">
+      <img src="image.jpg" alt="Imagem de festa" class="w-full max-h-80 object-cover rounded-lg shadow">
     </div>
-    <div class="info">
-      <h2>Informações do Evento</h2>
-      <p><strong>Data:</strong></p>
-      <p><strong>Horário:</strong></p>
-      <p><strong>Local:</strong></p>
-      <p><strong>Tema:</strong></p>
-      
-      <p>Venha celebrar esse momento especial comigo!</p>
+
+    <div class="info bg-pink-100 p-6 rounded-lg shadow mb-6">
+      <h2 class="text-pink-600 text-2xl font-semibold mb-4">Informações do Evento</h2>
+      <p class="font-medium">Data:</p>
+      <p class="font-medium">Horário:</p>
+      <p class="font-medium">Local:</p>
+      <p class="font-medium">Tema:</p>
+      <p class="mt-4">Venha celebrar esse momento especial comigo!</p>
     </div>
-    <a href="https://forms.google.com" class="confirm-button">Confirmar Presença</a>
+
+    <a href="https://forms.google.com"
+       class="inline-block bg-pink-500 hover:bg-pink-600 text-white text-lg font-medium py-3 px-6 rounded-lg transition">
+      Confirmar Presença
+    </a>
   </div>
-  <footer>
-    <p>Criado por Bruno Hackbart</p>
+
+  <footer class="bg-pink-400 text-white py-4 mt-8">
+    <p class="mb-1">Criado por Bruno Hackbart</p>
     <p>Contato: 031983638309 | Desenvolvimento de Sites e app's</p>
   </footer>
+
 </body>
 </html>
